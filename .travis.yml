@@ -5,8 +5,8 @@ cache:
   directories:
   - node_modules
 before_install:
-- openssl aes-256-cbc -K $encrypted_8dae3701ae37_key -iv $encrypted_8dae3701ae37_iv
-  -in id_rsa_github.enc -out ~\.ssh\\id_rsa_github -d
+- openssl aes-256-cbc -K $encrypted_d0ba509ab73c_key -iv $encrypted_d0ba509ab73c_iv
+  -in id_rsa.enc -out ~/.ssh/id_rsa -d
 - echo 安装hexo相关环境...
 install:
 - npm install gitbook & npm install gitbook-cli
